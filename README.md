@@ -57,3 +57,7 @@ The spec file is in **./jasmine/spec/feedreader.js**
     });
 
 ```
+
+## What you'll see?
+![alt text](https://inesarmadabras.github.io/feedreaderTests/results.png "Jasmine Results")
+
