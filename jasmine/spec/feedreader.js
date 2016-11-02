@@ -48,6 +48,7 @@ $(function() {
             });
         });
     });
+
     /* TODO: Write a new test suite named "The menu" */
     describe("The Menu", function() {
         /* TODO: Write a test that ensures the menu element is
@@ -71,6 +72,7 @@ $(function() {
             expect($("body").hasClass("menu-hidden")).toBe(true);
         });
     });
+
     /* TODO: Write a new test suite named "Initial Entries" */
     describe("Initial Entries", function() {
         /* TODO: Write a test that ensures when the loadFeed
@@ -87,6 +89,7 @@ $(function() {
             done();
         });
     });
+
     /* TODO: Write a new test suite named "New Feed Selection"*/
     describe("New Feed Selection", function() {
         /* TODO: Write a test that ensures when a new feed is loaded
