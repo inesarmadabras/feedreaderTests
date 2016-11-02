@@ -14,7 +14,7 @@ Whether you work in an organization that uses test-driven development or in an o
 
 *Option 1:* Download repository to your computer and open it in your browser. Open file index.html in browser. The test results will be displayed at the bottom of the page.
 
-*Option 2:* Open this link [Frontend Nanodegree Feedreader](https://inesarmadabras.github.io/frontend-nanodegree-feedreader)
+*Option 2:* Open this link [Frontend Nanodegree FeedReader](https://inesarmadabras.github.io/feedreaderTests)
 
 ## What I've done to complete this project?
 
@@ -45,17 +45,16 @@ Whether you work in an organization that uses test-driven development or in an o
 21. Write a README file detailing all steps required to successfully run the application. If you have added additional tests (for Udacious Test Coverage),  provide documentation for what these future features are and what the tests are checking for.
 
 ## Sample test:
-'''describe("RSS Feeds", function() {
-        /* This is our first test - it tests to make sure that the
-         * allFeeds variable has been defined and that it is not
-         * empty. Experiment with this before you get started on
-         * the rest of this project. What happens when you change
-         * allFeeds in app.js to be an empty array and refresh the
-         * page?
-         */
-        it("are defined", function() {
-            expect(allFeeds).toBeDefined();
-            //test: allFeeds is defined
-            expect(allFeeds.length).not.toBe(0);
+```javascript
+    describe("RSS Feeds", function() {
+       it("should have a URL defined", function() {
+            allFeeds.forEach(function(feeds) {
+                //test: allFeeds object has a URL defined
+                expect(feeds.url).toBeDefined();
+                //test: the URL is not empty
+                expect(feeds.url.length).not.toBe(0);
+
         });
-'''
+    });
+
+```
