@@ -1,4 +1,4 @@
-## FeedReader Tests with the framework Jasmine
+## FeedReader Tests with a JavaScript testing framework
 ## Web Development Frond-End Nanodegree - Udacity
 
 ## Project Overview
