@@ -1,9 +1,7 @@
 ## FeedReader Tests with a JavaScript testing framework
 ### Web Development Frond-End Nanodegree - Udacity
 
-## Project Overview
-
-This project is a web-based application that reads RSS feeds. It uses [Jasmine](http://jasmine.github.io/).
+This project is a web-based application that reads RSS feeds. It uses the framework [Jasmine](http://jasmine.github.io/).
 
 ## How to run?
 
