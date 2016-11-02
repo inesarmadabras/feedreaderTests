@@ -31,9 +31,11 @@ $(function() {
          */
         it("should have a URL defined", function() {
             allFeeds.forEach(function(feeds) {
-                expect(feeds.url).toBeDefined();
                 //test: allFeeds object has a URL defined
+                expect(feeds.url).toBeDefined();
+                //test: the URL is not empty
                 expect(feeds.url.length).not.toBe(0);
+
             });
         });
         /* TODO: Write a test that loops through each feed
@@ -42,8 +44,9 @@ $(function() {
          */
         it("should have a name defined", function() {
             allFeeds.forEach(function(feeds) {
-                expect(feeds.name).toBeDefined();
                 //test: allFeeds object has a name defined
+                expect(feeds.name).toBeDefined();
+                //test: the name is not empty
                 expect(feeds.name.length).not.toBe(0);
             });
         });
@@ -57,6 +60,7 @@ $(function() {
          * hiding/showing of the menu element.
          */
         it("should be hidden by default", function() {
+            //test: the menu is hidden by default
             expect($("body").hasClass("menu-hidden")).toBe(true);
         });
         /* TODO: Write a test that ensures the menu changes
@@ -65,9 +69,10 @@ $(function() {
           * clicked and does it hide when clicked again.
           */
         it("should change visibility when the menu icon is clicked", function() {
+            //test: does the menu display when clicked
             $(".menu-icon-link").trigger("click");
             expect($("body").hasClass("menu-hidden")).toBe(false);
-            //test: does the menu display when clicked
+            //test: does the menu hide when clicked again
             $(".menu-icon-link").trigger("click");
             expect($("body").hasClass("menu-hidden")).toBe(true);
         });
