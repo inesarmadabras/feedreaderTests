@@ -10,20 +10,15 @@ Testing is an important part of the development process and many organizations p
 Whether you work in an organization that uses test-driven development or in an organization that uses tests to make sure future feature development doesn't break existing features, it's an important skill to have!
 
 
-## What will I learn?
+## How to run?
 
-You will learn how to use Jasmine to write a number of tests against a pre-existing application. These will test the underlying business logic of the application as well as the event handling and DOM manipulation.
+*Option 1:* Download repository to your computer and open it in your browser. Open file index.html in browser. The test results will be displayed at the bottom of the page.
 
+*Option 2:* Open this link [Frontend Nanodegree Feedreader](https://inesarmadabras.github.io/frontend-nanodegree-feedreader)
 
-## How will this help my career?
+## What I've done to complete this project?
 
-* Writing effective tests requires analyzing multiple aspects of an application including the HTML, CSS and JavaScript - an extremely important skill when changing teams or joining a new company.
-* Good tests give you the ability to quickly analyze whether new code breaks an existing feature within your codebase, without having to manually test all of the functionality.
-
-
-# How will I complete this project?
-
-Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/projects/3442558598/rubric)
+[Project Rubric](https://review.udacity.com/#!/projects/3442558598/rubric)
 
 1. Take the JavaScript Testing [course](https://www.udacity.com/course/ud549)
 2. Download the [required project assets](http://github.com/udacity/frontend-nanodegree-feedreader).
@@ -32,6 +27,8 @@ Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/pr
 5. Explore the Jasmine spec file in **./jasmine/spec/feedreader.js** and review the [Jasmine documentation](http://jasmine.github.io).
 6. Edit the `allFeeds` variable in **./js/app.js** to make the provided test fail and see how Jasmine visualizes this failure in your application.
 7. Return the `allFeeds` variable to a passing state.
+
+
 8. Write a test that loops through each feed in the `allFeeds` object and ensures it has a URL defined and that the URL is not empty.
 9. Write a test that loops through each feed in the `allFeeds` object and ensures it has a name defined and that the name is not empty.
 10. Write a new test suite named `"The menu"`.
@@ -44,5 +41,21 @@ Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/pr
 17. No test should be dependent on the results of another.
 18. Callbacks should be used to ensure that feeds are loaded before they are tested.
 19. Implement error handling for undefined variables and out-of-bound array access.
-20. When complete - all of your tests should pass. 
+20. When complete - all of your tests should pass.
 21. Write a README file detailing all steps required to successfully run the application. If you have added additional tests (for Udacious Test Coverage),  provide documentation for what these future features are and what the tests are checking for.
+
+## Sample test:
+'''describe("RSS Feeds", function() {
+        /* This is our first test - it tests to make sure that the
+         * allFeeds variable has been defined and that it is not
+         * empty. Experiment with this before you get started on
+         * the rest of this project. What happens when you change
+         * allFeeds in app.js to be an empty array and refresh the
+         * page?
+         */
+        it("are defined", function() {
+            expect(allFeeds).toBeDefined();
+            //test: allFeeds is defined
+            expect(allFeeds.length).not.toBe(0);
+        });
+'''
