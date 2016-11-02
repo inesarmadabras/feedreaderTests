@@ -15,8 +15,6 @@ Whether you work in an organization that uses test-driven development or in an o
 Download repository to your computer. Open file index.html in browser. The test results will be displayed at the bottom of the page.
 The spec file is in **./jasmine/spec/feedreader.js**
 
-*Option 2:* Open this link [Frontend Nanodegree FeedReader](https://inesarmadabras.github.io/feedreaderTests)
-
 ## What I've done to complete this project?
 
 [Project Rubric](https://review.udacity.com/#!/projects/3442558598/rubric)
