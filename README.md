@@ -1,5 +1,5 @@
 ## FeedReader Tests with a JavaScript testing framework
-## Web Development Frond-End Nanodegree - Udacity
+### Web Development Frond-End Nanodegree - Udacity
 
 ## Project Overview
 
