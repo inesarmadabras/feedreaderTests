@@ -3,6 +3,9 @@
 
 This project is a web-based application that reads RSS feeds. It uses the framework [Jasmine](http://jasmine.github.io/).
 
+###Jasmine?
+Jasmine is a behavior-driven development framework for testing JavaScript code. It does not depend on any other JavaScript frameworks. It does not require a DOM. And it has a clean, obvious syntax so that you can easily write tests. 
+
 ## How to run?
 
 Download repository to your computer. Open file index.html in browser. The test results will be displayed at the bottom of the page.
