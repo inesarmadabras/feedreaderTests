@@ -36,20 +36,41 @@ The spec file is in **./jasmine/spec/feedreader.js**
 20. When complete - all of your tests should pass.
 21. Write a README file detailing all steps required to successfully run the application. If you have added additional tests (for Udacious Test Coverage),  provide documentation for what these future features are and what the tests are checking for.
 
-## Sample test:
+## Resubmission:
+`TODO` comments removed;
+
+`l.58` Initial Entries test:
 ```javascript
-    describe("RSS Feeds", function() {
-       it("should have a URL defined", function() {
-            allFeeds.forEach(function(feeds) {
-                //test: allFeeds object has a URL defined
-                expect(feeds.url).toBeDefined();
-                //test: the URL is not empty
-                expect(feeds.url.length).not.toBe(0);
-
+    it("should have at least one entry", function(done) {
+            var entries = $('.feed').find('.entry');
+            expect(entries.length >= 1).toBe(true);
+            done();
         });
-    });
-
 ```
+`l.74` News Feed test:
+ it's now independent of the previous test
+```javascript
+  describe("New Feed Selection", function() {
+      var PrevContent;
+      var UpdContent;
+      //get the previous content into a variable and load (update) the new content
+      beforeEach(function(done) {
+          // there is at least two feeds
+          expect(allFeeds.length >= 2).toBe(true);
+
+          // Load the first feed at index 0
+          loadFeed(0, function() {
+              // Set the PrevContent to content of feed
+              PrevContent = $('.header-title').text() + $('.feed').find('.entry').text().replace(/ +/g, " ")
+              // Load second feed at index 1
+              loadFeed(1, function() {
+                  // Set the UpdContent to content of new feed
+                  UpdContent = $('.header-title').text() + $('.feed').find('.entry').text().replace(/ +/g, " ");
+                  done();
+              });
+          });
+      });
+``` 
 
 ## What you'll see?
 ![Jasmine Results](https://inesarmadabras.github.io/feedreaderTests/result.png "Jasmine Results")
