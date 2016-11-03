@@ -56,7 +56,7 @@ $(function() {
     });
 
     describe("Initial Entries", function() {
-        // "loadFeed function is called with a callback "done"
+        // loadFeed function is called with a callback "done"
         beforeEach(function(done) {
             loadFeed(0, done);
         });
