@@ -78,3 +78,10 @@ The spec file is in **./jasmine/spec/feedreader.js**
 ## What you'll see?
 ![Jasmine Results](https://inesarmadabras.github.io/feedreaderTests/result.png "Jasmine Results")
 
+## Update (08/11/2016)
+`l.45` `toBeFalsy()` instead of `.toBe(false);` and  `toBeTruthy()` instead of `.toBe(true);` - Just because it sounds fancy ^.^
+
+`l.69 & l.80`  `toBeGreaterThan()` instead of `expect(entries.length >= 1).toBe(true);`
+
+`l.70` `done()` removed, because there's no async functions inside this function.
+
