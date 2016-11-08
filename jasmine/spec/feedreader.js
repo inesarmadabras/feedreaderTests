@@ -42,16 +42,16 @@ $(function() {
 
         it("should be hidden by default", function() {
             //test: the menu is hidden by default
-            expect($("body").hasClass("menu-hidden")).toBe(true);
+            expect($("body").hasClass("menu-hidden")).toBeTruthy(); //UPDATE - 'toBeTruthy()' instead of '.toBe(true);'
         });
 
         it("should change visibility when the menu icon is clicked", function() {
             //test: does the menu display when clicked
             $(".menu-icon-link").trigger("click");
-            expect($("body").hasClass("menu-hidden")).toBe(false);
+            expect($("body").hasClass("menu-hidden")).toBeFalsy(); //UPDATE - 'toBeFalsy()' instead of '.toBe(false);' - Just because it sounds fancy
             //test: does the menu hide when clicked again
             $(".menu-icon-link").trigger("click");
-            expect($("body").hasClass("menu-hidden")).toBe(true);
+            expect($("body").hasClass("menu-hidden")).toBeTruthy();
         });
     });
 
@@ -66,8 +66,8 @@ $(function() {
          */
         it("should have at least one entry", function(done) {
             var entries = $('.feed').find('.entry');
-            expect(entries.length >= 1).toBe(true);
-            done();
+            expect(entries.length).toBeGreaterThan(1);  //UPDADE: 'toBeGreaterThan()' instead of 'expect(entries.length >= 1).toBe(true);'
+            done(); //UPDATE: done() removed
         });
     });
 
@@ -77,7 +77,7 @@ $(function() {
         //get the previous content into a variable and load (update) the new content
         beforeEach(function(done) {
             // there is at least two feeds
-            expect(allFeeds.length >= 2).toBe(true);
+            expect(allFeeds.length).toBeGreaterThan(2); //UPDADE: 'toBeGreaterThan()' instead of 'expect(allFeeds.length >= 2).toBe(true);'
 
             // Load the first feed at index 0
             loadFeed(0, function() {
