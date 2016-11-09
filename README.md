@@ -1,7 +1,6 @@
 ## FeedReader Tests with a JavaScript testing framework
 ### Web Development Frond-End Nanodegree - Udacity  - [Check the Project Review](https://review.udacity.com/#!/reviews/265287/shared)
-
-This project is a web-based application that reads RSS feeds. It uses the framework [Jasmine](http://jasmine.github.io/).
+Wrote comprehensive unit tests, using the [Jasmine](http://jasmine.github.io/). testing framework, for an RSS Feed Reader application that uses Google's RSS API..
 
 ###Jasmine?
 Jasmine is a behavior-driven development framework for testing JavaScript code. It does not depend on any other JavaScript frameworks. It does not require a DOM. And it has a clean, obvious syntax so that you can easily write tests. 
